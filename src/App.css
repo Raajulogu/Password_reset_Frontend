@@ -1,38 +1,48 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background-image: url("https://t3.ftcdn.net/jpg/01/22/71/96/360_F_122719641_V0yw2cAOrfxsON3HeWi2Sf4iVxhv27QO.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:950px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup_body,.login_body,.reset_body,.forgot_body{
+  background-image: url("https://e0.pxfuel.com/wallpapers/667/98/desktop-wallpaper-login-background-outlook-login.jpg");
+  align-content: center;
+  width:50%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 500px;
 }
-
-.App-link {
-  color: #61dafb;
+.signup_form{
+  width:50%;
+  margin: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.signup_field,.login_field,.reset_field,.forgot_field{
+  width:100%
+}
+.signup_button,.login_button,.reset_button,.forgot_button{
+  margin:20px;
+}
+.login_form,.forgot_form,.reset_form{
+  width:50%;
+  margin: 50px;
+}
+.forgot_button{
+  background-color: transparent;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  padding:10px;
+}
+.dash_img{
+  margin-top:40px;
+  width:80%;
+  height:800px;
 }
