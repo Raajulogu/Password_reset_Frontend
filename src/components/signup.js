@@ -30,7 +30,7 @@ const Signup = () => {
     if(data.token){
       setError("")
       localStorage.setItem("token",data.token)
-      navigate("/dashboard")
+      navigate("/")
     }
     else{
       setError(data.message)
