@@ -7,7 +7,7 @@ const Dashboard = () => {
   useEffect(()=>{
   if(!localStorage.getItem("token")){
     navigate("/login", {replace:true})
-  },[])
+  })
   
   
 }
