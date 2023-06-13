@@ -6,7 +6,7 @@ const Dashboard = () => {
   let navigate=useNavigate()
   useEffect(()=>{
   if(!localStorage.getItem("token")){
-    navigate("/login", {replace:true})
+    navigate("/login")
   })
   
   
