@@ -1,12 +1,15 @@
 import React from 'react'
 import Base from '../Base/base'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,useEffect } from 'react-router-dom'
 
 const Dashboard = () => {
   let navigate=useNavigate()
-  
+  useEffect(()=>{
   if(!localStorage.getItem("token")){
     navigate("/login", {replace:true})
+  },[])
+  
+  
 }
   
   return (
